@@ -5,6 +5,11 @@ fun main() {
     val options = arrayOf(ROCK,PAPER,SCISSORS)
     val gameChoice = getGameChoice(options)
     val userChoice = getUserChoice(options)
+
+    printResult(
+        userChoice = userChoice,
+        gameChoice = gameChoice,
+    )
 }
 
 const val ROCK = "Rock"
@@ -45,4 +50,5 @@ fun printResult(userChoice: String, gameChoice: String) {
     } else {
         "You Lose"
     }
+    println(result)
 }
